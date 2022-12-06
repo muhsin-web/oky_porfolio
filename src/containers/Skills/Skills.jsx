@@ -15,7 +15,7 @@ import skill1 from '../../assest/git.png'
 
 import {motion} from 'framer-motion'
 import ReactTooltip from 'react-tooltip';
-import  {appWrap} from '../../wrapper'
+import  {appWrap, motionWrap} from '../../wrapper'
 
 import './Skills.scss'
 
@@ -144,4 +144,4 @@ const Skills = () => {
   )
 }
 
-export default appWrap(Skills, 'skills')
+export default appWrap(motionWrap(Skills, 'app__skills'), "skills", "app__whitebg")

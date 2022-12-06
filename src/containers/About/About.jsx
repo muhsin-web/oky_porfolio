@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 // import { useState, useEffect } from 'react'
 import './About.scss'
 
-import { appWrap } from '../../wrapper'
+import { appWrap, motionWrap } from '../../wrapper'
 
 import about01 from '../../assest/about01.png'
 import about02 from '../../assest/about02.png'
@@ -52,4 +52,4 @@ const About = () => {
   )
 }
 
-export default appWrap(About, "about")
+export default appWrap(motionWrap(About, 'app__about'), "about", 'app__whitebg')
