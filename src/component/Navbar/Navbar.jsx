@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.scss'
-import { HiMenuAlt4, HiX} from 'react-icons/hi'
+import { HiMenuAlt4, HiMoon, HiX} from 'react-icons/hi'
 import {motion} from 'framer-motion'
 import { useState } from 'react'
 
@@ -9,6 +9,18 @@ import { useState } from 'react'
 const Navbar = () => {
 
     const [toggle, setToggle] = useState(false)
+
+    const darkMode = () => {
+    
+    // --font-base: "DM Sans", sans-serif;
+    // --primary-color: #edf2f8;
+    // --secondary-color: #313bac;
+    // --black-color: #030303;ghth
+    // --lightGray-color: #e4e4e4;
+    // --gray-color: #6b7688;
+    // --brown-color: #46364a;
+    // --white-color: #ffffff;
+    }
 
   return (
     <nav className="app__navbar">
@@ -24,6 +36,8 @@ const Navbar = () => {
                 </li>
             ))}
         </ul>
+
+        <HiMoon onClick={darkMode}/>
 
         <div className="app__navbar-menu">
             <HiMenuAlt4 onClick = {() => setToggle(true)}/>

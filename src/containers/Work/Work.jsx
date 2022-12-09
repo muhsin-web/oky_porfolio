@@ -68,9 +68,9 @@ const Work = () => {
 
   console.log(activeFilter)
 
-  useEffect((works) => {
-    setAllWork(works)
-  }, [])
+  // useEffect((works) => {
+  //   setAllWork(works)
+  // }, [])
 
   console.log(allWork)
   
@@ -88,6 +88,7 @@ const Work = () => {
         setAllWork(works)
       }else{
         setAllWork(works.filter((work) => work.title.includes(item)))
+        console.log(allWork)
       }
     }, 500)
 
