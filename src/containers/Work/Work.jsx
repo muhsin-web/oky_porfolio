@@ -2,10 +2,9 @@ import React from 'react'
 
 import { useState, useEffect } from 'react'
 
-import about01 from '../../assest/about01.png'
-import about02 from '../../assest/about02.png'
-import about03 from '../../assest/about03.png'
-import about04 from '../../assest/about04.png'
+import about01 from '../../assest/abt-1.png'
+import about02 from '../../assest/abt-2.png'
+import about03 from '../../assest/abt-3.png'
 
 import {AiFillEye} from 'react-icons/ai'
 import {motion} from 'framer-motion'
@@ -18,45 +17,24 @@ const Work = () => {
     {
       imgUrl: about01,
       name: "",
-      projectLink: "",
-      description: "hello mr john this will b my first time here on the platform doing this great work",
-      title: "UI/UX"
-    },
-    {
-      imgUrl: about03,
-      name: "",
-      projectLink: "",
-      description: "hello mr john this will b my first time here on the platform doing this great work",
-      title: 'web app'
+      projectLink: "https://arascos.vercel.app",
+      description: "With a user-friendly interface and Stripe's secure payment processing, this an ideal solution for businesses looking to streamline their online payment systems.",
+      title: "Web App"
     },
     {
       imgUrl: about02,
       name: "",
-      projectLink: "",
-      description: "hello mr john this will b my first time here on the platform doing this great work",
+      projectLink: "https://frixbuy.netlify.app",
+      description: "built an eCommerce site with JS, HTML, and CSS that provides a fast shopping experience for customers. This project demonstrates my expertise in creating user-friendly websites",
       title: 'web app'
     },
     {
       imgUrl: about03,
       name: "",
-      projectLink: "",
-      description: "hello mr john this will b my first time here on the platform doing this great work",
-      title: "UI/UX"
+      projectLink: "https://fridax.netlify.app",
+      description: "built a full responsive landpage and also using modern technologies to bring in great design and user experience with use of Threejs.",
+      title: "Web App"
     },
-    {
-      imgUrl: about04,
-      name: "",
-      projectLink: "",
-      description: "hello mr john this will b my first time here on the platform doing this great work",
-      title: "Mobile app"
-    },
-    {
-      imgUrl: about04,
-      name: "",
-      projectLink: "",
-      description: "hello mr john this will b my first time here on the platform doing this great work",
-      title: "React js"
-    }
   ]
 
 
@@ -101,7 +79,7 @@ const Work = () => {
 
       <div className="app__work-filter">
         {
-          ['UI/UX', 'web app', 'Mobile app', 'React js', 'All'].map((item, index) => (
+          ['web app', 'Mobile app','All'].map((item, index) => (
             <div
             key={index}
             onClick={()=>handleWorkFilter(item)}

@@ -6,9 +6,10 @@ import { appWrap } from '../../wrapper'
 
 import Images from '../../assest/profile.png'
 import image_1 from '../../assest/circle.svg'
-import image_flutter from '../../assest/flutter.png'
-import image_redux from '../../assest/redux.png'
+import image_graphql from '../../assest/graphql.png'
 import image_sass from '../../assest/sass.png'
+import image_react from '../../assest/react.png'
+import image_mu from '../../assest/mu5.png'
 
 
 const scaleVariants = {
@@ -72,7 +73,7 @@ const Header = () => {
         >
 
           {
-            [image_flutter, image_redux, image_sass].map(circle => (
+            [image_graphql, image_react, image_mu].map(circle => (
               <div className="circle-cmp app__flex" key={`circle${circle}`}>
                 <img src={circle} alt={circle} />
               </div>

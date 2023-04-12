@@ -18,14 +18,15 @@ const Navbar = () => {
     // --black-color: #030303;ghth
     // --lightGray-color: #e4e4e4;
     // --gray-color: #6b7688;
-    // --brown-color: #46364a;
+    // --brown-color: #46364a;  
     // --white-color: #ffffff;
-    }
+    }   
 
   return (
     <nav className="app__navbar">
         <div className="app__navbar-logo">
-            <img src='../../assest/Logo.png' alt="logo" />
+            MUHSIN
+            {/* <img src='../../assest/Logo.png' alt="logo" /> */}
         </div>
 
         <ul className="app__navbar-links">
@@ -37,7 +38,6 @@ const Navbar = () => {
             ))}
         </ul>
 
-        <HiMoon onClick={darkMode}/>
 
         <div className="app__navbar-menu">
             <HiMenuAlt4 onClick = {() => setToggle(true)}/>

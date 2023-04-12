@@ -12,10 +12,10 @@ import about04 from '../../assest/about04.png'
 
 
 const about = [
-  {title: 'web development', description: 'i am a good web developer', imgUrl: about01},
-  {title: 'web Designer', description: 'i am a good web developer', imgUrl: about02},
-  {title: 'UI/UX', description: 'i am a good web developer', imgUrl: about04},
-  {title: 'web Animations', description: 'i am a good web developer', imgUrl: about03}
+  {title: 'web development', description: "I don't just build website, i build website that sells", imgUrl: about01},
+  {title: 'web Designer', description: "We always have the interest of our client in mind for suitable and convinient usage.", imgUrl: about02},
+  {title: 'UI/UX', description: "Creating designs that suit what the user or clients are requesting for with great user experience.", imgUrl: about04},
+  {title: 'web Animations', description: "Making our webpages fun to stay around and keep surfing through with creative animations.", imgUrl: about03}
 ]
 
 const About = () => {

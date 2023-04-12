@@ -21,12 +21,6 @@ const Testimonial = () => {
 
   const testimonials = [
     {
-      company: 'google',
-      name: 'john denmark',
-      img: about03,
-      feedback: "muhsin is a great web developer, he has been very good with all of the works i hand over to him, never been disappointed by him great work 😍"
-    },
-    {
       company: 'rashnoTech',
       name: 'ismail yusuf',
       img: about03,

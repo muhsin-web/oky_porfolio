@@ -1,23 +1,24 @@
 .app__navbar{
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 1rem 2rem;
-    background: rgba(225, 225, 225, 0.25);
+    padding: 1rem;
+    // background: rgba(225, 225, 225, 0.25);
     backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(225, 225, 225, 0.18);
     position: fixed;
     z-index: 2;
 } 
 
 .app__navbar-logo{
+    color: var(--gray-color);
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex: 1;
 
 
     img{
@@ -55,6 +56,7 @@
             text-transform: uppercase;
             font-weight: 500;
             transition: all 0.3s ease-in-out;
+            font-size: 1rem;
 
             &:hover{
                 color: var(--secondary-color);
